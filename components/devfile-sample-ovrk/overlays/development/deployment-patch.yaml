@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ovrk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0044-tenant/ci1t-43256-0044-app/devfile-sample-ovrk@sha256:eb8f19704e9c10b72638af46dcffa79f41478eccdd09980eb6506093ee706276
+        name: my-nodejs
+        resources: {}
+status: {}
